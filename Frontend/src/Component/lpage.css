@@ -1,0 +1,38 @@
+.main {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "navbar content"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #41c784;
+  color: white;
+  height: 100px;
+  width: 100vw;
+}
+
+.navbar {
+  grid-area: navbar;
+  height: 80vh;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #41c784;
+  color: white;
+  height: 82px;
+}
